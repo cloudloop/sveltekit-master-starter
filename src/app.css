@@ -1,1 +1,15 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Override DaisyUI menu defaults */
+.menu :where(li > *:not(ul):not(details):not(.menu-title)) {
+  color: rgb(51, 65, 85) !important; /* slate-700 */
+}
+
+.menu :where(li > *:not(ul):not(details):not(.menu-title)):hover {
+  background-color: rgb(241, 245, 249) !important; /* slate-100 */
+}
+
+.menu :where(li > *:not(ul):not(details):not(.menu-title)):active {
+  background-color: rgb(226, 232, 240) !important; /* slate-200 */
+}
